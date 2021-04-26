@@ -6,7 +6,40 @@
 
 .container {
     width: 1170px;
-    margin: 0 auto;
-    border: 3px solid red;
+    margin: 50px auto;
+}
+
+.clearfix::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.box {
+    background-color: lightgreen;
+    border: 1px solid black;
+    width: calc(100% / 3);
+    height: 300px;
+    float: left;
+    position: relative;
+}
+
+.box:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.star {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    font-size: 30px;
+    color: black;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+.star:hover {
+    color: red;
 }
 
