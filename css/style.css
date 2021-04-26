@@ -5,8 +5,8 @@
 }
 
 .container {
-    width: 1170px;
-    margin: 50px auto;
+    max-width: 1060px;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -15,35 +15,53 @@
     clear: both;
 }
 
-.box-primo{
-    background-image: url(../img/1.webp);
-    background-size: cover;
-    border: 1px solid black;
-    width: 300px;
-    height: 400px;
-    float: left;
-    position: relative;
-    margin: 2px;
-}
-
-
 .box {
-    background-color: brown;    
-    background-size: cover;
-    border: 1px solid black;
-    width: 300px;
-    height: 400px;
+    width: calc(100% / 3 - 30px);
     float: left;
+    margin: 4px;
     position: relative;
-    margin: 2px;
+    margin-bottom: 10px;
 }
 
-.box:hover {
-    background-color: yellow;
-    cursor: pointer;
+.box img {
+    height: 450px;
+
 }
 
-.star {
+.effetto-hover {
+    display: none;
+}
+
+.box:hover .origin {
+    display: none;
+}
+
+.box:hover .effetto-hover {
+    display: block;
+}
+
+.descrizione-prodotto {
+    height: 60px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.pastello {
+    background-color: lightgreen;
+}
+
+.sconto {
+    color: red;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.cuore {
     position: absolute;
     top: 5px;
     right: 0px;
@@ -53,7 +71,6 @@
     background-color: white;
 }
 
-.star:hover {
+.cuore:hover {
     color: red;
 }
-
