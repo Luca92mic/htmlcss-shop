@@ -15,13 +15,27 @@
     clear: both;
 }
 
-.box {
-    background-color: lightgreen;
+.box-primo{
+    background-image: url(../img/1.webp);
+    background-size: cover;
     border: 1px solid black;
-    width: calc(100% / 3);
-    height: 300px;
+    width: 300px;
+    height: 400px;
     float: left;
     position: relative;
+    margin: 2px;
+}
+
+
+.box {
+    background-color: brown;    
+    background-size: cover;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    float: left;
+    position: relative;
+    margin: 2px;
 }
 
 .box:hover {
